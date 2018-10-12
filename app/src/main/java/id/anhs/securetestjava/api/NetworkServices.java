@@ -1,9 +1,9 @@
 package id.anhs.securetestjava.api;
 
-public class NetworkServices {
+import static id.anhs.securetestjava.BuildConfig.API_KEY;
+import static id.anhs.securetestjava.BuildConfig.BASE_URL;
 
-    private static final String BASE_URL = "https://www.thesportsdb.com/api/v1/json/";
-    private static final String API_KEY = "1";
+public class NetworkServices {
 
     public static TheSportDbApiServices getTheSportDBApiServices() {
         return RetrofitClient
