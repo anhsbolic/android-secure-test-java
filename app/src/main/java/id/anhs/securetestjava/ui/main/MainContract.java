@@ -6,9 +6,15 @@ public interface MainContract {
 
     interface View {
         void setTeam(Team team);
+
+        void showToast(String msg);
     }
 
     interface Presenter{
-        void getTeam();
+        void clearComposite();
+
+        void disposeComposite();
+
+        void getTeam(String idTeam);
     }
 }

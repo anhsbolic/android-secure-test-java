@@ -1,15 +1,31 @@
 package id.anhs.securetestjava.model;
 
+import android.support.annotation.Keep;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Keep
 public class Team {
 
-    String idTeam;
-    String strTeam;
-    String strLeague;
-    String strDescriptionEN;
-    String strTeamBadge;
+    @SerializedName("idTeam")
+    @Expose
+    public String idTeam;
+    @SerializedName("strTeam")
+    @Expose
+    public String strTeam;
+    @SerializedName("strLeague")
+    @Expose
+    public String strLeague;
+    @SerializedName("strDescriptionEN")
+    @Expose
+    public String strDescriptionEN;
+    @SerializedName("strTeamBadge")
+    @Expose
+    public String strTeamBadge;
 
     public Team() {
-
+        // empty constructor
     }
 
     public Team(String idTeam, String strTeam, String strLeague,
